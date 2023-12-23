@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./public/*.html"],
   theme: {
-    screen:{
+    screens:{
       sm: '480px',
       md: '768px',
       lg: '976px',
@@ -16,7 +16,7 @@ module.exports = {
         grayishBlue: 'hsl(201, 11%, 66%)',
       },
       fontFamily: {
-        sans: ['Bai jamjuree', 'san-serif'],
+        sans: ['Bai Jamjuree', 'san-serif'],
       },
     },
   },
