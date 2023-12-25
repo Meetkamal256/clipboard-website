@@ -621,6 +621,11 @@ h5{
   margin-bottom: 5rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -653,6 +658,10 @@ h5{
   margin-top: 4rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .flex{
   display: flex;
 }
@@ -661,12 +670,8 @@ h5{
   display: contents;
 }
 
-.w-9{
-  width: 2.25rem;
-}
-
-.w-24{
-  width: 6rem;
+.w-12{
+  width: 3rem;
 }
 
 .w-32{
@@ -675,6 +680,16 @@ h5{
 
 .max-w-md{
   max-width: 28rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.scale-50{
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
@@ -705,6 +720,12 @@ h5{
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -717,14 +738,19 @@ h5{
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-1 > :not([hidden]) ~ :not([hidden]){
+.space-y-0 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-lightBlue{
@@ -737,6 +763,16 @@ h5{
   background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
 }
 
+.bg-gray-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -744,6 +780,11 @@ h5{
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pt-16{
@@ -816,13 +857,31 @@ body{
   }
 }
 
+.hover\:bg-strongCyan:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-80:hover{
   --tw-bg-opacity: 0.8;
+}
+
+.hover\:text-strongCyan:hover{
+  --tw-text-opacity: 1;
+  color: hsl(171 66% 44% / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
   .md\:absolute{
     position: absolute;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .md\:ml-24{
+    margin-left: 6rem;
   }
 
   .md\:w-1\/2{
@@ -837,6 +896,12 @@ body{
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
     margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-32 > :not([hidden]) ~ :not([hidden]){
@@ -855,24 +920,6 @@ body{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:space-x-16 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:space-x-28 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(7rem * var(--tw-space-x-reverse));
-    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:pl-16{
